@@ -4,3 +4,15 @@
     font-size: $font-size;
     border-radius: $border-radius;
 }
+
+// Button variant
+@mixin button-variant($background, $border, $active-background: darken($background, 7.5%), $active-border: darken($border, 10%)) {
+    background-color: $background;
+    border-color: $border;
+
+    &:hover {
+        background-color: $active-background;
+        border-color: $active-border;
+        color: $white;
+    }
+}
