@@ -1,8 +1,0 @@
-@mixin dinamic-cols(){
-    $class-slug: col !default;
-    @for $i from 1 through 12{
-        .#{$class-slug}-#{$i} {
-            width: (100% / $i);
-        }
-    }
-}

@@ -1,6 +1,0 @@
-@mixin standard-flex($display: flex, $flex-wrap: wrap, $align-items: center, $justify-content: flex-start) {
-    display: $display;
-    flex-wrap: $flex-wrap;
-    align-items: $align-items;
-    justify-content: $justify-content;
-}
