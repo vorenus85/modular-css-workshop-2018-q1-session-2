@@ -9,13 +9,11 @@
 }
 
 .btn-sm {
-    font-size: 10px;
-    padding: 3px 5px;
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
 }
 
 .btn-lg {
-    font-size: 18px;
-    padding: 10px 15px;
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
 }
 
 .btn-primary{

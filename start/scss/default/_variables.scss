@@ -59,6 +59,16 @@ $badge-background: lighten($global-color, 10%);  //#ededed;
 /* btns */
 $btn-border-width: 2px;
 
+$btn-padding-y-sm: 3px;
+$btn-padding-x-sm: 5px;
+$btn-font-size-sm: 10px;
+$btn-border-radius-sm: $global-border-radius;
+
+$btn-padding-y-lg: 10px;
+$btn-padding-x-lg: 15px;
+$btn-font-size-lg: 18px;
+$btn-border-radius-lg: $global-border-radius;
+
 /* btn-primary */
 $btn-primary-background: $white;
 $btn-primary-border-color: $global-color;
