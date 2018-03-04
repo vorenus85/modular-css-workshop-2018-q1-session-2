@@ -1,0 +1,22 @@
+/* modules - news */
+.news-list-wrapper {
+    @include standard-flex();
+    margin: -$gutter;
+    padding: $gutter 0;
+}
+
+.news-item {
+    @include dinamic-width(1);
+
+    .content-position & {
+        @include dinamic-width(2);
+    }
+}
+
+.news-item-content {
+    padding: 0 $gutter;
+}
+
+.news-item-row {
+    padding: 5px 0;
+}

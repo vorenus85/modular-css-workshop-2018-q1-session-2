@@ -1,0 +1,55 @@
+/* modules - product-items */
+
+.product-list {
+    @include standard-flex();
+}
+
+.product-item-row {
+    padding: 5px 0;
+}
+
+.product-item {
+    @include dinamic-width(1);
+    &-wrapper,
+    &-content {
+        padding: 10px;
+    }
+}
+
+.product-item-image {
+    padding: 5px;
+    img {
+        max-width:100%;
+    }
+}
+
+.product-item-row-actions {
+    .product-item-row {
+        display: inline-block;
+    }
+}
+
+.content-position {
+    .product-item {
+        @include dinamic-width(3);
+    }
+}
+
+.sidebar-position {
+
+    .product-item-content {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .product-item-image {
+        width: 40%;
+        padding: 5px 10px;
+        float:left;
+    }
+
+    .product-item-row {
+        float:right;
+        width: 60%;
+    }
+}

@@ -1,0 +1,29 @@
+/* componetens - button */
+
+.btn {
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: $global-font-size;
+    text-transform: uppercase;
+    display: inline-block;
+    border: $btn-border-width solid transparent;
+    color: $white;
+}
+
+.btn-sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+}
+
+.btn-lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+}
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}

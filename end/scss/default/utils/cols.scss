@@ -1,0 +1,6 @@
+/* utils - cols */
+.col-wrapper {
+    @include standard-flex();
+}
+
+@include dinamic-cols();

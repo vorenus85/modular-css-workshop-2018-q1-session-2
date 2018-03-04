@@ -1,0 +1,15 @@
+/* layout - header */
+
+header {
+    padding: 15px 0;
+    margin-bottom: 15px;
+    background: $header-background;
+}
+
+.header-top-content {
+    @include standard-flex($justify-content: flex-end);
+}
+
+.header-position {
+
+}
