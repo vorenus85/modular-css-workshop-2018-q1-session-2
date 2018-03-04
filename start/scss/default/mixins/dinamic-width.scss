@@ -1,0 +1,3 @@
+@mixin dinamic-width($item-per-row){
+    width: 100% / $item-per-row;
+}

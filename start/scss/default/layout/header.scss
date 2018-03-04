@@ -7,10 +7,7 @@ header {
 }
 
 .header-top-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
+    @include standard-flex($justify-content: flex-end);
 }
 
 .header-position {

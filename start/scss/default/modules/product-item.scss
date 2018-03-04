@@ -1,11 +1,7 @@
 /* modules - product-items */
 
 .product-list {
-    // todo erre mixint
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
+    @include standard-flex();
 }
 
 .product-item-row {
@@ -13,7 +9,7 @@
 }
 
 .product-item {
-    width: 100%;
+    @include dinamic-width(1);
     &-wrapper,
     &-content {
         padding: 10px;
@@ -34,8 +30,8 @@
 }
 
 .content-position {
-    .product-item { // TODO mixint írni rá amire hitkozhatunk a variablesből
-        width: 33.33%;
+    .product-item {
+        @include dinamic-width(3);
     }
 }
 
