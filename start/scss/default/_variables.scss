@@ -13,11 +13,6 @@ $global-color: lightgray;
 $global-hover-color: gray;
 $global-font-color: #222;
 
-$theme-colors: (
-        primary: $global-color,
-        secondary: $global-hover-color
-) !default;
-
 /* layout */
 $gutter: 15px;
 $gap: ($gutter * 2);
@@ -26,6 +21,7 @@ $content-width: calc(100% - #{$sidebar-width});
 $container-width: 1140px;
 
 /* fonts */
+// fonts
 
 $theme-fonts: "https://fonts.googleapis.com/css?family=Playfair+Display:400,900,400i,900i|Roboto:400,400i,700,700i&subset=latin-ext";
 
@@ -63,15 +59,21 @@ $badge-background: lighten($global-color, 10%);  //#ededed;
 /* btns */
 $btn-border-width: 2px;
 
-$btn-padding-y-sm: 3px;
-$btn-padding-x-sm: 5px;
-$btn-font-size-sm: 10px;
-$btn-border-radius-sm: $global-border-radius;
+/* btn-primary */
+$btn-primary-background: $white;
+$btn-primary-border-color: $global-color;
+$btn-primary-color: #222;
+$btn-primary-hover-background: $white;
+$btn-primary-hover-border-color: $global-hover-color;
+$btn-primary-hover-color: #444;
 
-$btn-padding-y-lg: 10px;
-$btn-padding-x-lg: 15px;
-$btn-font-size-lg: 18px;
-$btn-border-radius-lg: $global-border-radius;
+/* btn-secondary*/
+$btn-secondary-background: $global-color;
+$btn-secondary-border-color: $global-color;
+$btn-secondary-color: $white;
+$btn-secondary-hover-background: $global-hover-color;
+$btn-secondary-hover-border-color: $global-hover-color;
+$btn-secondary-hover-color: $white;
 
 /* product-items */
 

@@ -3,27 +3,41 @@
 .btn {
     padding: 5px 12px;
     cursor: pointer;
-    font-size: $global-font-size;
+    font-size: 14px;
     text-transform: uppercase;
     display: inline-block;
-    border: $btn-border-width solid transparent;
-    color: $white;
 }
 
-.btn-sm {
-    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+.btn-sm { // todo mixint írni rá
+    font-size: 10px;
+    padding: 3px 5px;
 }
 
-.btn-lg {
-    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+.btn-lg { // todo mixint írni rá
+    font-size: 18px;
+    padding: 10px 15px;
 }
 
-//
-// Alternate buttons
-//
+.btn-primary{ // todo mixint írni rá
+    border: $btn-border-width solid $btn-primary-border-color;
+    background: $btn-primary-background;
+    color: $btn-primary-color;
 
-@each $color, $value in $theme-colors {
-    .btn-#{$color} {
-        @include button-variant($value, $value);
+    &:hover {
+        border-color: $btn-primary-hover-border-color;
+        background: $btn-primary-hover-background;
+        color: $btn-primary-hover-color;
+    }
+}
+
+.btn-secondary{ // todo mixint írni rá
+    border: $btn-border-width solid $btn-secondary-border-color;
+    background: $btn-secondary-background;
+    color: $btn-secondary-color;
+
+    &:hover {
+        border-color: $btn-secondary-hover-border-color;
+        background: $btn-secondary-hover-background;
+        color: $btn-secondary-hover-color;
     }
 }

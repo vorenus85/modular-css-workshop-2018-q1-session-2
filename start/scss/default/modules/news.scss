@@ -1,15 +1,20 @@
 /* modules - news */
 .news-list-wrapper {
-    @include standard-flex();
+    // todo erre mixint
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
     margin: -$gutter;
     padding: $gutter 0;
 }
 
 .news-item {
-    @include dinamic-width(1);
+    width: 100%;
 
     .content-position & {
-        @include dinamic-width(2);
+        width: 50%; // TODO mixint írni rá amire hitkozhatunk a variablesből
     }
 }
 
