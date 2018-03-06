@@ -1,27 +1,22 @@
 # Create mixins
 
 ## 1. A mixins mappa 
-- A default mappában hozzuk létre a hövetkező fájlt
+- Hozzunk létre egy <b>mixins</b> mappát a default mappában
+
+- A mixins mappával egy szinten  hozzunk létre a következő fájlt:
+
 ```
 _mixins.scss
 ```
 
-- A tartalma a következő legyen:
-```$xslt
-@import "mixins/index";
+- importáljuk a fájlt a default.scss fájlban
 ```
-
-- Hozzunk létre egy <b>mixins</b> mappát a default mappában
-
-- A mixins mappában hozzuk létre a következő fájlt:
-
-```
-_index.scss
+@import 'mixins';
 ```
 
 ## 2. dinamic-width mixin
 
-- Hozzuk létre a következő fájlt:
+- Hozzuk létre a következő fájlt a mixins mappában:
 ```
 dinamic-width.scss
 ```
@@ -34,9 +29,9 @@ dinamic-width.scss
 }
 ```
 
-- importáljuk az <b>_index.scss</b>-ben
+- importáljuk az <b>_mixins.scss</b>-ben
 ```
-@import "dinamic-width";
+@import "mixins/dinamic-width";
 ```
 
 - hívjuk meg a mixint a megfelelő helyeken, a megfelelő paraméterekkel
@@ -48,7 +43,7 @@ modules/product-item.scss
 
 ## 3. dinamic-cols mixin
 
-- Hozzuk létre a következő fájlt:
+- Hozzuk létre a következő fájlt a mixins mappában:
 ```
 dinamic-cols.scss
 ```
@@ -66,9 +61,9 @@ dinamic-cols.scss
 }
 ```
 
-- importáljuk az <b>_index.scss</b>-ben
+- importáljuk az <b>mixins.scss</b>-ben
 ```
-@import "dinamic-cols";
+@import "mixins/dinamic-cols";
 ```
 
 - hívjuk meg a mixint a megfelelő helyeken, a megfelelő paraméterekkel
@@ -79,7 +74,7 @@ utils/cols.scss
 
 ## 4. standard-flex mixin
 
-- Hozzuk létre a következő fájlt:
+- Hozzuk létre a következő fájlt a mixins mappában:
 ```
 standard-flex.scss
 ```
@@ -95,9 +90,9 @@ standard-flex.scss
 }
 ```
 
-- importáljuk az <b>_index.scss</b>-ben
+- importáljuk az <b>mixins.scss</b>-ben
 ```
-@import "standard-flex";
+@import "mixins/standard-flex";
 ```
 
 - hívjuk meg a mixint a megfelelő helyeken, a megfelelő paraméterekkel
@@ -110,7 +105,7 @@ utils/cols.scss
 
 ## 5. button-size mixin
 
-- Hozzuk létre a következő fájlt:
+- Hozzuk létre a következő fájlt a mixins mappában:
 ```
 buttons.scss
 ```
@@ -138,9 +133,9 @@ $btn-font-size-lg: 18px;
 $btn-border-radius-lg: $global-border-radius;
 ```
 
-- importáljuk az <b>_index.scss</b>-ben
+- importáljuk az <b>mixins.scss</b>-ben
 ```
-@import "buttons";
+@import "mixins/buttons";
 ```
 
 - hívjuk meg a mixint a megfelelő helyeken, a megfelelő paraméterekkel
@@ -210,3 +205,6 @@ components/button.scss
     }
 }
 ```
+
+## 7. Futassuk a gulp taskot, gyúrjuk egybe a css-t
+Mivel már létrehoztuk a moduláris struktúránkat a start mappában állva a terminálban futassuk a gulp
