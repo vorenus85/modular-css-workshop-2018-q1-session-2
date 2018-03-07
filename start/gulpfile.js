@@ -39,10 +39,9 @@ gulp.task('browserSync', function() {
             baseDir: '.'
         }
     });
-    
-    gulp.watch("scss/**/*.scss", ['sass']);
 });
 
-gulp.task('default', ['browserSync'], function (){
+gulp.task('default', ['browserSync','sass'], function (){
     gulp.watch('index.html', browserSync.reload);
+    gulp.watch("scss/**/*.scss", ['sass']);
 });
